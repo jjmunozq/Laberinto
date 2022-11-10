@@ -7,7 +7,7 @@
         const WINDOW_HEIGHT = MAP_NUM_ROWS * TILE_SIZE;
         const MINIMAP_SCALE_FACTOR = 0.2;
         // const VISION_ANGLE = 2*Math.PI ;
-        const VISION_ANGLE = Math.PI / 3;
+        const VISION_ANGLE = Math.PI / 1.5;
         const RAY_WIDTH = 2; // can be increased for optimization
         const NUM_RAYS = WINDOW_WIDTH / RAY_WIDTH;
         class Map {
@@ -64,7 +64,7 @@
                 this.walkDirection = 0;      //-1 for back , 1 for front
                 this.strafeDirection = 0;      //-1 for back , 1 for front
                 this.rotationAngle =  -Math.PI / 2;
-                this.moveSpeed = 5.0;
+                this.moveSpeed = 2.0;
                 this.rotationSpeed = 3 * (Math.PI / 180)
 
             }
